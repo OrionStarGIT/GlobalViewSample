@@ -25,7 +25,7 @@ export class ChatModel {
 
     public constructor() {
         // @ts-ignore
-        this.mIsShow = global.globalChat && global.globalChat.isFloatChatViewClosed();
+        this.mIsShow = global.globalChat && global.globalChat.isShow();
     }
 
     /**
