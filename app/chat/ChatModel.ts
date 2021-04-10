@@ -23,6 +23,11 @@ export class ChatModel {
     //聊天框监听结果
     @observable private mResultText: string = '';
 
+    public constructor() {
+        // @ts-ignore
+        this.mIsShow = global.globalChat && global.globalChat.isFloatChatViewClosed();
+    }
+
     /**
      * 允许显示聊天框
      */
